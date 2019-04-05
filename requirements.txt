@@ -1,0 +1,5 @@
+flask-restplus==0.12.1
+google-ads==1.1.1
+PyJWT==1.7.1
+firebase-admin==2.16.0
+sentry-sdk==0.7.9

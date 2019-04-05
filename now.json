@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "name": "NOW FLASK",
+	"builds": [
+        { "src": "index.py", "use": "@now/python@canary" , "config": { "maxLambdaSize": "30mb" } }
+    ],
+    "routes": [
+        { "src": "/.*", "dest": "/"}
+    ],
+	"env": {
+  		"CONFIG": "Production"
+	},
+	"alias": ["now-flask"]
+}
