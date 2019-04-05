@@ -1,4 +1,3 @@
-# index.py
 from flask import Flask
 from flask_restplus import Resource, Api, fields
 from werkzeug.contrib.fixers import ProxyFix
