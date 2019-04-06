@@ -1,5 +1,5 @@
 from flask import Flask, request, abort, Blueprint
-# from index import db
+
 from flask_restplus import Resource, fields, Api
 import datetime
 import requests
@@ -16,4 +16,4 @@ api = api_docs.namespace('api', description='Backend main API')
 class Example(Resource):
 	def get(self):
 		x = print_something("hello")
-		return {"hello":"world"}
+		return {"hello":x}
